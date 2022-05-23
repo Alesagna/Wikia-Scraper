@@ -2,13 +2,8 @@ from kivymd.app import MDApp
 from kivymd.uix.screen import MDScreen
 from kivymd.toast.kivytoast.kivytoast import toast
 from kivy.lang.builder import Builder
-from kivy.core.window import Window
-from kivy.config import Config
 import os
 from scrape import Scraper
-
-Config.set("graphics", "resizable", False)
-Config.set('graphics', 'width', '500')
 
 
 class MainWindow(MDScreen):
