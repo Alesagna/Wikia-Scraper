@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 
 
 def Scraper(url):
+    owd = os.gedcwd()
     os.chdir(os.path.join(os.getcwd(), "Saved Images"))
     request = requests.get(url)
     soup = BeautifulSoup(request.text, "html.parser")
@@ -21,5 +22,6 @@ def Scraper(url):
         with open(title.replace(":", "-").replace("?", "-") + imageKey[-4:], "wb") as f:
             img = requests.get(imageLink)
             f.write(img.content)
+   os.chdir(owd)
 
 
