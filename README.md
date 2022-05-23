@@ -5,4 +5,4 @@ Program made using Python and Kivy to scrape images from Wikia Fandom (fandom.co
 
 With this in mind, heres the download. Just extract the folder and run the .exe (instructions are displayed in the program).
 
-https://drive.google.com/file/d/15uTpm5DEchKzd-ocdHKW6p31nX0GfZ3Y/view?usp=sharing
+https://drive.google.com/file/d/1FG6mm6maH2epUJyUSs9Eoi7Ze4p4LpbT/view?usp=sharing
