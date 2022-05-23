@@ -1,0 +1,43 @@
+MainWindow:
+
+
+<MainWindow>:
+    name: 'inputurl'
+    id: inputurl
+
+    # toolbar
+    MDBoxLayout:
+        orientation: 'vertical'
+
+        MDToolbar:
+            pos_hint: {'top': 1}
+            title: 'Wikia Fandom Gallery Scraper'
+
+        MDFloatLayout:
+            size_hint: 1, .9
+            id: linkscreen
+
+            MDTextField:
+                id: linkinput
+                size_hint: .8, None
+                pos_hint: {'center_x': .5, 'y': .9}
+                hint_text: 'Input URL'
+                mode: 'rectangle'
+                text_validate_unfocus: False
+                on_text_validate: root.scrapeImages(linkinput.text)
+
+            MDLabel:
+                text: "Made by Ale (@kuchiyosecrow on twitter) in Python <3\nThis program will make a folder titled Saved Images in the main directory\nInput and confirm a wikia fandom gallery link to have all the images scraped to that folder!"
+                pos_hint: {'center_x': .51, 'y': .05}
+                font_name: "Arial"
+                font_size: 18
+
+            MDIcon:
+                icon: "heart"
+                pos: 720, 40
+                font_size: 75
+
+            ScrollView:
+                md_bg_color: app.theme_cls.primary_color
+                pos_hint: {'center_x': .5, 'y': .1}
+                size_hint: .9, .8
