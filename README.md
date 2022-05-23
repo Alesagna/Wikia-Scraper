@@ -6,4 +6,5 @@ Errors to make note of:
 2. Inputting an invalid URL containing "fandom.com" will crash the program.
 
 With this in mind, heres the download. Just extract the folder and run the .exe (instructions are displayed in the program).
+
 https://drive.google.com/file/d/1UnAFwR0xFYSCaD_3vGMbJwHKLfV0ZzH0/view?usp=sharing
